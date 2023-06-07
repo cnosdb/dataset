@@ -4,19 +4,13 @@ The SmartWatch Gestures Dataset has been collected to evaluate several gesture r
 
 Eight different users performed twenty repetitions of twenty different gestures, for a total of 3200 sequences. Each sequence contains acceleration data from the 3-axis accelerometer of a first generation Sony SmartWatch™, as well as timestamps from the different clock sources available on an Android device. The smartwatch was worn on the user's right wrist. The gestures have been manually segmented by the users performing them by tapping the smartwatch screen at the beginning and at the end of every repetition.
 
-- Id: 1
+- Id: `1`
 - Homepage: [https://tev.fbk.eu/resources/smartwatch](https://tev.fbk.eu/resources/smartwatch)
 - Versions: 1.0.0
 - Size: 4.987 MB
 - Format: CSV
 - DownLoad: [https://dl.cnosdb.com/sample/gestures_dataset.csv](https://dl.cnosdb.com/sample/gestures_dataset.csv)
 - Last Update: 2023-06-05
-
-### Usage
-
-```
-\w 1
-```
 
 ### Field Descriptions
 

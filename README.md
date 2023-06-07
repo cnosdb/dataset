@@ -6,7 +6,7 @@ This repository maintains a collection of high-quality public datasets primarily
 ## Usage
 
 ```shell
-\w 1
+\w https://dl.cnosdb.com/sample/gestures_dataset.csv
 ```
 
 ## Table of Contents

@@ -1,14 +1,24 @@
+
+# Unique number of the data set.
 id = "1"
+
+# Changes in data format will update the version number.
 version = "1.0.0"
+
+# Date of last update of data.
 last-update = "2023-06-05"
-mode = "unknown"
+
+# Describe whether the dataset is a regularly growing dataset.
+# dynamic Update from time to time
+# archive Archived data, rarely updated
+mode = "archive"
 
 [description]
 name = "SmartWatch Gesture"
 homepage = "https://tev.fbk.eu/resources/smartwatch"
 short = "The SmartWatch Gestures Dataset has been collected to evaluate several gesture recognition algorithms for interacting with mobile applications using arm gestures."
 description = "Eight different users performed twenty repetitions of twenty different gestures, for a total of 3200 sequences. Each sequence contains acceleration data from the 3-axis accelerometer of a first generation Sony SmartWatch™, as well as timestamps from the different clock sources available on an Android device. The smartwatch was worn on the user's right wrist. The gestures have been manually segmented by the users performing them by tapping the smartwatch screen at the beginning and at the end of every repetition."
-license = "MIT License"
+license = "Unknown"
 download = "https://dl.cnosdb.com/sample/gestures_dataset.csv"
 
 [[file]]
