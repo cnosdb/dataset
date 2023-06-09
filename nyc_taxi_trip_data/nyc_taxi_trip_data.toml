@@ -1,0 +1,32 @@
+
+# Unique number of the data set.
+id = "3"
+
+# Changes in data format will update the version number.
+version = "1.0.0"
+
+# Date of last update of data.
+last-update = "2014-06-18"
+
+# Describe whether the dataset is a regularly growing dataset.
+# dynamic Update from time to time
+# archive Archived data, rarely updated
+mode = "archive"
+
+[description]
+name = "NYC Taxi Trip Data 2013"
+homepage = "https://archive.org/details/nycTaxiTripData2013"
+short = "FOIA/FOILed Taxi Trip Data from the NYC Taxi and Limousine Commission 2013. Released by http://chriswhong.com/open-data/foil_nyc_taxi/"
+description = ""
+license = "Unknown"
+download = "https://dl.cnosdb.com/sample/nyc_taxi_trip_data.csv"
+
+[[file]]
+name = "nyc_taxi_trip_data.csv"
+gziped = "true"
+format = "csv"
+table = "nyc_taxi_trip_data"
+time = "time"
+tag = ["vendor_id","rate_code"]
+field = ["medallion","hack_license","vendor_id","rate_code","store_and_fwd_flag","dropoff_time","passenger_count","trip_time_in_secs","trip_distance","pickup_longitude","pickup_latitude","dropoff_longtitude","dropoff_latitude"]
+field.type = ["BIGINT UNSIGNED","BIGINT UNSIGNED","STRING","TIMESTAMP","BIGINT","BINGINT","DOUBLE","DOUBLE","DOUBLE","DOUBLE","DOUBLE"]

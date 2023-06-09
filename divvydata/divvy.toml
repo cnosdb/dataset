@@ -1,0 +1,32 @@
+
+# Unique number of the data set.
+id = "2"
+
+# Changes in data format will update the version number.
+version = "1.0.0"
+
+# Date of last update of data.
+last-update = "2023-05-05"
+
+# Describe whether the dataset is a regularly growing dataset.
+# dynamic Update from time to time
+# archive Archived data, rarely updated
+mode = "dynamic"
+
+[description]
+name = "Divvy Data"
+homepage = "https://divvybikes.com/system-data"
+short = "Historical trip data available to the public"
+description = "The data has been processed to remove trips that are taken by staff as they service and inspect the system; and any trips that were below 60 seconds in length (potentially false starts or users trying to re-dock a bike to ensure it was secure)."
+license = "Divvy Data License Agreement "
+download = "https://dl.cnosdb.com/sample/divvy_tripdata.csv"
+
+[[file]]
+name = "divvy_tripdata.csv"
+gziped = "true"
+format = "csv"
+table = "divvy_tripdata"
+time = "started_at"
+tag = ["start_station_id","member_casual"]
+field = ["ride_id","rideable_type","ended_at","start_station_name","end_station_name","end_station_id","start_lat","start_lng","end_lat","end_lng"]
+field.type = ["BIGINT","STRING","TIMESTAMP","STRING","STRING","BIGINT","DOUBLE","DOUBLE","DOUBLE","DOUBLE"]
